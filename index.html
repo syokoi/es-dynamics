@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Presentation materials for Adaptive and Neutral Theory of Evolution Strategies for Large Language Models by Soma Yokoi and Issei Sato. IBIS 2026 and NeurIPS 2026.">
+  <title>Soma Yokoi | Adaptive and Neutral Theory of Evolution Strategies for Large Language Models</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #252b31;
+      --muted: #5e646a;
+      --accent: #791d31;
+      --line: #dedbd5;
+      --paper: #ffffff;
+      --background: #f5f4f1;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(100%, 780px);
+      margin: 48px auto;
+      padding: 40px 48px 44px;
+      background: var(--paper);
+      border-top: 4px solid var(--accent);
+    }
+
+    .profile {
+      margin-bottom: 38px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .name {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 6px 16px;
+      margin: 0 0 8px;
+      font-size: 23px;
+      font-weight: 650;
+      letter-spacing: 0.03em;
+    }
+
+    .affiliation { margin: 0; font-size: 14px; }
+
+    .conferences {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-size: clamp(27px, 4.6vw, 35px);
+      font-weight: 600;
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    .authors { margin: 16px 0 32px; font-size: 16px; line-height: 1.8; }
+    h2 { margin: 0 0 16px; font-size: 17px; font-weight: 650; }
+
+    .resources { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+
+    .resource {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 10px 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .resource-title { margin: 0; font-size: 16px; font-weight: 600; }
+    .resource-detail { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+    .status { color: var(--muted); font-size: 13px; white-space: nowrap; }
+    a { color: var(--accent); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 1px; }
+    .resource-link { display: inline-block; padding: 9px 0; font-size: 14px; font-weight: 600; }
+
+    @media (max-width: 600px) {
+      .page { margin: 0 auto; min-height: 100vh; padding: 28px 22px 36px; }
+      .profile { margin-bottom: 28px; padding-bottom: 20px; }
+      .name { column-gap: 12px; font-size: 21px; }
+      .resource { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+      .resource-link { padding: 5px 0; }
+      .status { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="profile">
+      <p class="name">Soma Yokoi</p>
+      <p class="affiliation">Center for Data Science, Waseda University</p>
+    </header>
+
+    <main>
+      <p class="conferences">IBIS 2026 · NeurIPS 2026</p>
+      <h1>Adaptive and Neutral Theory of Evolution Strategies for Large Language Models</h1>
+      <p class="authors">Soma Yokoi, Issei Sato</p>
+
+      <section aria-labelledby="resources-heading">
+        <h2 id="resources-heading">Resources</h2>
+        <ul class="resources">
+          <li class="resource">
+            <div>
+              <p class="resource-title">IBIS 2026 poster · Japanese</p>
+              <p class="resource-detail">PDF</p>
+            </div>
+            <span class="status">Coming soon</span>
+          </li>
+          <li class="resource">
+            <div>
+              <p class="resource-title">IBIS 2026 poster · English</p>
+              <p class="resource-detail">PDF</p>
+            </div>
+            <span class="status">Coming soon</span>
+          </li>
+          <li class="resource">
+            <div>
+              <p class="resource-title">NeurIPS 2026</p>
+              <p class="resource-detail">Official conference page</p>
+            </div>
+            <a class="resource-link" href="https://neurips.cc/virtual/2026/poster/151417">View page</a>
+          </li>
+          <li class="resource">
+            <div>
+              <p class="resource-title">arXiv</p>
+              <p class="resource-detail">Preprint</p>
+            </div>
+            <span class="status">Coming soon</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
